@@ -1,0 +1,11 @@
+name: vote
+labels:
+    com.example.description: Vote
+containers:
+  - image: docker/example-voting-app-vote:latest
+services:
+  - name: vote
+    type: NodePort
+    ports:
+    - port: 5000
+      targetport: 80

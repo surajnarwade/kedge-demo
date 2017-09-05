@@ -1,0 +1,9 @@
+name: result
+containers:
+  - image: tmadams333/example-voting-app-result:latest
+services:
+  - name: result
+    type: NodePort
+    ports:
+    - port: 8081
+      targetport: 80

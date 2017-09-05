@@ -1,0 +1,9 @@
+name: web
+containers:
+  - image: tuna/docker-counter23
+services:
+  - name: web
+    type: NodePort
+    ports:
+    - port: 5000
+      targetport: 5000

@@ -1,0 +1,9 @@
+name: db
+labels:
+  com.example.description: "Postgres-Database"
+containers:
+  - image: postgres:9.4
+services:
+  - name: db
+    ports:
+    - port: 5432

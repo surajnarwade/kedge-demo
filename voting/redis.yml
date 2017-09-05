@@ -1,0 +1,7 @@
+name: redis
+containers:
+  - image: redis:alpine
+services:
+  - name: redis
+    ports: 
+    - port: 6379
